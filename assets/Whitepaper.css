@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+    padding-left:60px;
+    margin-bottom: 20px;
+}
+body {
+    justify-content: center;
+    font-family: 'serif';
+    color: #181c1f;
+}
+.courier{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 16px;
+}
+.no-underline{text-decoration: none;}
+.no-bold{font-weight:300;}
+ol.none {list-style-type: none;}
+.section .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+.section .table th, .section .table td {
+    padding: 2px;
+    text-align: left;
+}
+.pdf-container {
+    max-width: 670px;
+    margin: auto;
+    background: #fff;
+    width: 210mm;  /* A4 width */
+    min-height: 297mm; /* A4 height */
+    padding: 10mm; /* Page margin */
+}
+.no-select {
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.authors {
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom:40px;
+}
+.authors a{
+    color:#000;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.capitalized-title {
+    font-variant: small-caps;
+}
+.inline-formula{
+    display: inline-block;
+    margin-top:-50%;
+    text-indent:0;
+}  
+.header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header .line-space{
+    margin-bottom: 10px;
+}
+.section h2 {
+    padding-bottom: 15px;
+}
+.section h2 span,
+.section h3 span{
+    padding-right:10px;
+}
+.section h4 span{
+    padding-right:5px;
+}
+.section h3{
+    font-size: 18px;
+}
+.section p , .section h3, .section h4, .section ul li, .section ol li{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.section ul li,
+.section ol li{
+    text-align: justify;
+}
+.section p.no-margin{
+    margin-bottom: 0;
+}
+.section{
+    margin-bottom:30px;
+}
+.section>div{
+    margin-bottom: 20px;
+}
+p.abstract-center{
+    text-align: center;
+}
+.section p:not(:first-of-type){
+    text-indent: 40px;
+}
+.section p.no-indent{
+    text-indent:0;
+}
+.section p.no-indent strong{
+    padding-right:10px;
+}
+.para-no-margin p{
+    margin-bottom:0;
+}
+.section p.formula{
+    text-indent:0;
+}
+.section a{
+    color:#000;
+    text-decoration: underline;
+}
+.inline-formula mjx-container {
+    margin: 0 !important;
+}
+.section .table{
+    border-collapse: collapse;
+    border:none;
+}
+.section .table.algo th{
+    border-bottom: 1px solid #000;
+}
+.section .table.algo{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.section .table.algo tr td:first-child{
+    padding-left:15px;
+}
+.section .table.algo tr td{
+    vertical-align: top;
+    text-align: left;
+}
+.section sup, .section sub {
+    font-size: 75%;  /* Reduce size to match surrounding text */
+    line-height: 0;   /* Prevent affecting paragraph line height */
+    position: relative;
+}
+.section sup {
+    top: -0.2em; /* Adjust upward position */
+}
+.section sub {
+    bottom: -0.2em; /* Adjust downward position */
+}
+.section img{
+    max-width: 100%;
+    display: block;
+    margin:20px auto;
+}
+.section .img-caption{
+    text-align: center;
+    display:block;
+    margin-bottom: 20px;
+}
+.section .img-caption.left{
+    text-align: left;
+}
+.section p.hanging-indent {
+    padding-left: 40px;  /* Indent for alignment */
+    text-indent: -40px;  /* Negative indent for the first line */
+}
+.pdffooter{
+    padding-top:10px;
+    position:relative;
+    margin-top:100px;
+    font-size: 16px;
+}
+.pdffooter a{
+    color: #ea0381;
+    text-decoration: none;
+}
+.pdffooter:before{
+    content:"";
+    height:1px;
+    width: 200px;
+    background-color: #000;
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.references{
+    margin-top:30px;
+}
+.references .table tr td{
+ vertical-align: top;
+ padding: 10px;;
+}
+.references .table tr td:first-child{
+    padding-left:0
+}
+.equation{
+    float:right;
+    margin-top:-38px;
+}
+
+
